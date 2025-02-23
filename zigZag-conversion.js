@@ -6,11 +6,11 @@
 //Below is the code for the problem
 
 var convert = function(s,numRows){
-    if(numRows === 1 || s.length<0)return s;
+    if(numRows === 1 || s.length<numRows)return s;
 
     let direction = false;
     let count = 0;
-    let arr=new Array[numRows].fill("");
+    let arr=new Array(numRows).fill("");
     for (let i=0;i<s.length;i++){
         let curr =s[i];
         arr[count] += curr;
